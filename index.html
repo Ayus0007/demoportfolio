@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayus Ken Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(120deg, #000000, #2b0037);
+      color: #f8f8f8;
+      overflow-x: hidden;
+    }
+    header {
+      height: 100vh;
+      background: url('https://wallpapercave.com/wp/wp4712681.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    header h1, header p {
+      z-index: 2;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #e600ff;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.3rem;
+      color: #ddd;
+      max-width: 600px;
+    }
+    section {
+      padding: 80px 20px;
+    }
+    .project {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px) scale(1.02);
+    }
+    .project h3 {
+      color: #bb86fc;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      color: #ff66ff;
+      text-decoration: none;
+      margin: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1c001f;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .social-icons {
+      margin-top: 20px;
+    }
+    .social-icons a {
+      color: #ff66ff;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="parallax">
+    <h1>Ayus Ken / Ayush</h1>
+    <p>I dive into hackathons, robotics, swarm drones, AI, and game development. I'm also passionate about building IoT and defense-focused projects that matter.</p>
+  </header>
+
+  <section id="projects">
+    <h2 style="text-align:center; margin-bottom: 40px; color:#ff4fcd">Featured Projects</h2>
+
+    <div class="project" id="p1">
+      <h3>AI NPC (Pokémon Game)</h3>
+      <p>Gym leaders think like real opponents, adapting attacks to your Pokémon. Adds strategy to the classic experience.</p>
+      <img src="https://i.pinimg.com/736x/7c/e5/d7/7ce5d77d91cee2265b693920b892e0d6.jpg" alt="AI NPC Screenshot" style="width:25%; border-radius: 8px; margin-top:10px;"/>
+    </div>
+
+    <div class="project" id="p2">
+      <h3>Drone for Leading Blind</h3>
+      <p>A smart mini drone that scans the room and guides blind users safely and efficiently.</p>
+      <img src="https://i.pinimg.com/736x/98/3d/a2/983da24132c8d68f0750788466ee4646.jpg" alt="Blind Drone" style="width:25%; border-radius: 8px; margin-top:10px;"/>
+    </div>
+
+    <div class="project" id="p3">
+      <h3>PDF to CBT</h3>
+      <p>A JEE platform with 5K+ users and $200 monthly revenue. Converts PDFs into Computer-Based Tests for seamless practice.</p>
+      <img src="https://i.pinimg.com/736x/91/68/12/916812787ac2668ca9d112f23f828ae9.jpg" alt="PDF to CBT" style="width:25%; border-radius: 8px; margin-top:10px;"/>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2 style="color:#ff4fcd">Contact Me</h2>
+    <p>Feel free to reach out or connect:</p>
+    <a href="mailto:ayuspoke91@gmail.com"><i class="fas fa-envelope"></i> ayuspoke91@gmail.com</a>
+    <div class="social-icons">
+      <a href="https://instagram.com/ayus_ken" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p style="margin-top: 20px; font-size: 0.8rem;">Credit: Ken</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Ayus Ken | Made with <span style="color:#ff33cc">❤</span> in Cyberpunk x AOT style
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('header h1', { delay: 200, origin: 'top', distance: '50px' });
+    ScrollReveal().reveal('header p', { delay: 400, origin: 'bottom', distance: '30px' });
+    ScrollReveal().reveal('#p1', { delay: 300, origin: 'left', distance: '50px' });
+    ScrollReveal().reveal('#p2', { delay: 500, origin: 'right', distance: '50px' });
+    ScrollReveal().reveal('#p3', { delay: 700, origin: 'bottom', distance: '50px' });
+    ScrollReveal().reveal('.contact', { delay: 300, origin: 'bottom', distance: '40px' });
+  </script>
+</body>
+</html>
